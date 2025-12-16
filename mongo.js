@@ -1,11 +1,10 @@
-// seed.js - MongoDB Database Seed Script
-// Save as: seed.js
-// Run: node seed.js
+
+
 
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-// MongoDB Connection
+
 const MONGODB_URI = 'mongodb://localhost:27017/airbnb';
 
 mongoose.connect(MONGODB_URI)
@@ -328,4 +327,5 @@ async function seedDatabase() {
 
 
 seedDatabase();
+
 
