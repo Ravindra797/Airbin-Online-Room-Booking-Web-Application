@@ -1,6 +1,4 @@
-// App.js - Complete React Application
-// Save as: src/App.js
-// Install dependencies: npm install axios react-router-dom
+
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -249,5 +247,6 @@ function PropertyModal({ listing, onClose }) {
     </div>
   );
 }
+
 
 export default App;
