@@ -1,6 +1,4 @@
-// server.js - Complete Node.js + Express Backend
-// Save as: server.js
-// Run: node server.js
+
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -11,7 +9,7 @@ require('dotenv').config();
 
 const app = express();
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
@@ -65,7 +63,7 @@ const listingSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-// Booking Schema
+
 const bookingSchema = new mongoose.Schema({
   listing: { type: mongoose.Schema.Types.ObjectId, ref: 'Listing', required: true },
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
@@ -82,7 +80,7 @@ const User = mongoose.model('User', userSchema);
 const Listing = mongoose.model('Listing', listingSchema);
 const Booking = mongoose.model('Booking', bookingSchema);
 
-// ========== AUTHENTICATION MIDDLEWARE ==========
+
 const authenticate = (req, res, next) => {
   const token = req.headers.authorization?.split(' ')[1];
   
@@ -371,4 +369,5 @@ app.use((err, req, res, next) => {
 // ========== START SERVER ==========
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
+
 });
