@@ -1,6 +1,4 @@
-/* styles.css - Complete Airbnb Styling */
 
-/* ========== Global Styles ========== */
 * {
     margin: 0;
     padding: 0;
@@ -219,7 +217,7 @@ body {
     transform: scale(1.05);
 }
 
-/* ========== Listings Section ========== */
+
 .listings-section {
     padding: 48px 0;
 }
@@ -492,7 +490,7 @@ body {
     background: var(--primary-hover);
 }
 
-/* ========== Footer ========== */
+
 .footer {
     background: var(--bg-gray);
     border-top: 1px solid var(--border-gray);
@@ -560,7 +558,7 @@ body {
     text-decoration: underline;
 }
 
-/* ========== Responsive Design ========== */
+
 @media (max-width: 768px) {
     .nav-center {
         display: none;
@@ -579,3 +577,4 @@ body {
         gap: 16px;
     }
 }
+
